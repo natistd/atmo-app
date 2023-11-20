@@ -2,6 +2,9 @@ body {
   background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
 }
+a {
+  color: #885df1;
+}
 .atmo-app {
   background-color: white;
   border-radius: 16px;
@@ -9,4 +12,78 @@ body {
   max-width: 800px;
   padding: 30px;
   box-shadow: 0 30px 50px #41326414;
+}
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+
+.search-form-input {
+  background: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 15px 20px;
+  width: 80%;
+}
+
+.search-form-button {
+  background: #885df1;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin-left: 10px;
+}
+
+main {
+  padding: 30px 0;
+}
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-info-city {
+  color: #272142;
+  font-size: 38px;
+  line-height: 48px;
+  margin: 0;
+}
+
+.weather-info-details {
+  color: #27214266;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.weather-info-temperature {
+  display: flex;
+}
+.weather-info-details strong {
+  color: #f65282;
+}
+
+.weather-info-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.weather-info-value {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.weather-info-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #27214274;
 }
