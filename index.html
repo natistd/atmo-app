@@ -15,12 +15,13 @@
   <body>
     <div class="atmo-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Tipe a city..."
             required
             class="search-form-input"
+            id="seach-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-info">
           <div>
-            <h1 class="weather-info-city">Mexico City</h1>
+            <h1 class="weather-info-city" id="city">Mexico City</h1>
             <p class="weather-info-details">
               Saturday 13:23, overcast clouds
               <br />
@@ -51,5 +52,6 @@
         <a href="https://atmo-app.netlify.app/" target="_blank">Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
