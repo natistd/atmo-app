@@ -1,5 +1,3 @@
-let searchCityElement = document.querySelector("#search-form");
-
 function useSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#seach-form-input");
@@ -7,4 +5,5 @@ function useSearchSubmit(event) {
   cityElement.innerHTML = searchInput.value;
 }
 
-searchCityElement.addEventListener("submit", useSearchSubmit);
+let searchElement = document.querySelector("#search-form");
+searchElement.addEventListener("submit", useSearchSubmit);
