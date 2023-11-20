@@ -1,9 +1,9 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #eeeeee;
   font-family: "Roboto", sans-serif;
 }
 a {
-  color: #885df1;
+  color: #2eb872;
 }
 .atmo-app {
   background-color: white;
@@ -14,12 +14,12 @@ a {
   box-shadow: 0 30px 50px #41326414;
 }
 header {
-  border-bottom: 1px solid #f9f7fe;
+  border-bottom: 1px solid #eeeeee;
   padding: 0 0 30px 0;
 }
 
 .search-form-input {
-  background: #f9f7fe;
+  background: #eeeeee;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -28,7 +28,7 @@ header {
 }
 
 .search-form-button {
-  background: #885df1;
+  background: #2eb872;
   border: none;
   border-radius: 6px;
   color: white;
@@ -61,7 +61,7 @@ main {
   display: flex;
 }
 .weather-info-details strong {
-  color: #f65282;
+  color: #fa4659;
 }
 
 .weather-info-icon {
@@ -81,7 +81,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
+  border-top: 1px solid #eeeeee;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
