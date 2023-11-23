@@ -75,7 +75,9 @@ function displayForecast(response) {
       `<div class="col">
             <div class="weather-forecast-day">
               <div class="weather-forecast-date">Mon</div>
-              <div class="weather-forecast-icon">☀️</div>
+              <div class="weather-forecast-icon"><img src="${
+                day.condition.icon_url
+              }"></div>
               <div class="weather-forecast-temperature">
                 <span class="weather-forecast-max">${Math.round(
                   day.temperature.maximum
