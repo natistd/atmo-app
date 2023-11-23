@@ -60,3 +60,15 @@ let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", useSearchSubmit);
 
 searchCity("Mexico-City");
+
+let forecast = document.querySelector("#forecast");
+forecast.innerHTML = `<div class="col">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Mon</div>
+              <div class="weather-forecast-icon">☀️</div>
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-max">12° </span>
+                <span class="weather-forecast-min">9°</span>
+              </div>
+            </div>
+          </div>`;

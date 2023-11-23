@@ -24,7 +24,7 @@ header {
   border-radius: 6px;
   font-size: 16px;
   padding: 15px 20px;
-  width: 75%;
+  width: 100%;
 }
 
 .search-form-button {
@@ -33,8 +33,8 @@ header {
   border-radius: 6px;
   color: white;
   font-size: 16px;
-  padding: 15px 30px;
-  margin-left: 10px;
+  padding: 15px;
+  width: 100%;
 }
 
 main {
@@ -66,6 +66,7 @@ main {
 
 .weather-info-icon {
   font-size: 44px;
+  padding-top: 5px;
 }
 
 .weather-info-value {
@@ -77,6 +78,36 @@ main {
 .weather-info-unit {
   margin-top: 16px;
   font-size: 28px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-forecast-day {
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: #27214266;
+  font-weight: 500;
+}
+.weather-forecast-icon {
+  font-size: 20px;
+}
+
+.weather-forecast-max,
+.weather-forecast-min {
+  font-size: 16px;
+  color: #fa4659;
+  font-weight: 500;
+}
+
+.weather-forecast-min {
+  opacity: 0.7;
+  padding-left: 5px;
 }
 
 footer {
