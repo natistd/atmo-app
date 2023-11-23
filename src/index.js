@@ -56,15 +56,18 @@ function useSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-let searchElement = document.querySelector("#search-form");
-searchElement.addEventListener("submit", useSearchSubmit);
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
 
-searchCity("Mexico-City");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sun"];
+  let forecastHtml = "";
 
-let forecast = document.querySelector("#forecast");
-forecast.innerHTML = `<div class="col">
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="col">
             <div class="weather-forecast-day">
-              <div class="weather-forecast-date">Mon</div>
+              <div class="weather-forecast-date">${day}</div>
               <div class="weather-forecast-icon">☀️</div>
               <div class="weather-forecast-temperature">
                 <span class="weather-forecast-max">12° </span>
@@ -72,3 +75,13 @@ forecast.innerHTML = `<div class="col">
               </div>
             </div>
           </div>`;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
+let searchElement = document.querySelector("#search-form");
+searchElement.addEventListener("submit", useSearchSubmit);
+
+searchCity("Mexico-City");
+displayForecast();
