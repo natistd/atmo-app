@@ -26,9 +26,8 @@ header {
   padding: 15px 20px;
   width: 100%;
 }
-
 .search-form-button {
-  background: #2eb872;
+  background: #0156b3;
   border: none;
   border-radius: 6px;
   color: white;
@@ -82,7 +81,6 @@ main {
 
 .weather-forecast {
   display: flex;
-  justify-content: space-between;
 }
 
 .weather-forecast-day {
@@ -94,10 +92,13 @@ main {
   color: #27214266;
   font-weight: 500;
 }
-.weather-forecast-icon {
-  font-size: 20px;
+.weather-forecast-icon img {
+  width: 45px;
 }
-
+.weather-forecast-temperature {
+  display: flex;
+  justify-content: space-evenly;
+}
 .weather-forecast-max,
 .weather-forecast-min {
   font-size: 16px;
